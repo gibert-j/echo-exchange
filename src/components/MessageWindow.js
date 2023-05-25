@@ -12,6 +12,7 @@ const MessageWindow = () => {
     "Why don't skeletons fight each other? They don't have the guts!",
     "Why did the scarecrow win an award? Because he was outstanding in his field!",
     "How do you organize a space party? You planet!",
+    "How's this? 🤔 💭 Here's some random placeholder text to make the conversation longer and check the boundaries to make sure text is not overflowing 👍 looking pretty overall. What do you think? Do you like it? Ask your friends. Do they like it? I knew they would 😊",
     "Why did the bicycle fall over? Because it was two-tired!",
     "What's the best time to go to the dentist? Tooth-hurty!",
     "Why did the tomato turn red? Because it saw the salad dressing!",

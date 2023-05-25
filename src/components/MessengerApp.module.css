@@ -1,0 +1,11 @@
+.MessengerContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media (min-width: 992px) {
+  .MessengerContainer {
+    flex-direction: row;
+  }
+}

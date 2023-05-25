@@ -2,26 +2,29 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  width: 100%; /* Ensure MessageWindow takes full width */
+  /* padding: 1rem; */
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+  /*  new styles */
+  overflow-y: auto;
+  height: 100%;
 }
 
 .messageContainer {
   overflow-y: auto;
   flex-grow: 1;
-  padding-bottom: 4rem; /* Add padding to bottom to prevent last message from being hidden */
 }
 
 .messageHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.2rem; /* 5) Reduced vertical distance between header and message */
+  margin-bottom: 0.2rem;
 }
 
 .sender {
   color: #000000;
-  font-weight: 700;
+  font-weight: 600;
 }
 .sender::after {
   content: "•";
@@ -43,20 +46,24 @@
 .timestamp {
   font-size: 0.8em;
   color: #5b5b5b;
-  padding-right: 2rem; /* Add padding to move timestamp a bit to the left */
+  padding-right: 1rem;
 }
 
 .messageBlock {
-  padding: 5px 0;
+  padding: 0.2rem 0;
+}
+
+.messageText {
+  font-size: 0.95rem;
 }
 
 .myMessage .messageText {
-  /* 6) Set your messages background color */
+  /* local user messages background color */
   background-color: #c5e0e82e;
 }
 
 .theirMessage .messageText {
-  /* 6) Set their messages background color */
+  /* other user messages background color */
   background-color: #ec7e1d15;
 }
 
@@ -64,7 +71,7 @@
   position: fixed;
   bottom: 0;
   background: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 1rem 0.8rem 1rem;
   left: 0;
   right: 0;
   width: 100%;
@@ -72,22 +79,45 @@
 
 .messageInput {
   border-color: #ccc;
-  height: 2.5rem; /* 4) Set consistent height for input */
+  height: 2.5rem;
 }
 
 .sendButton {
   background-color: #f96432d6;
+  border: rgba(0, 0, 0, 0.074) solid;
   outline: none;
   box-shadow: none;
-  height: 2.5rem; /* 4) Set consistent height for button */
+  height: 2.5rem;
 }
 
 .sendButton:hover {
   background-color: #f96332;
+  border: rgba(0, 0, 0, 0.074) solid;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .inputRow {
-    padding-right: 0; /* Remove padding on mobile view */
+    padding-right: 0;
   }
+} */
+
+/* scrollbar styles */
+/* For Chrome, Safari */
+.messageContainer::-webkit-scrollbar {
+  width: 0.5rem; /* make scrollbar thinner */
+}
+
+.messageContainer::-webkit-scrollbar-track {
+  background: transparent; /* make track transparent */
+}
+
+.messageContainer::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); /* make thumb semi-transparent */
+  border-radius: 1.25rem; /* round the corners */
+}
+
+/* For Firefox */
+.messageContainer {
+  scrollbar-width: thin; /* make scrollbar thinner */
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* make scrollbar semi-transparent */
 }
