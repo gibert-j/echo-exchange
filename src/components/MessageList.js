@@ -21,8 +21,8 @@ const MessageList = () => {
   return (
     <div className={styles.messageList}>
       <Input
-        type='text'
-        placeholder='Search...'
+        type="text"
+        placeholder="Search..."
         value={search}
         onChange={handleChange}
         className={styles.searchInput}
