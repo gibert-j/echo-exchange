@@ -1,0 +1,93 @@
+.messageWindow {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%; /* Ensure MessageWindow takes full width */
+}
+
+.messageContainer {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-bottom: 4rem; /* Add padding to bottom to prevent last message from being hidden */
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem; /* 5) Reduced vertical distance between header and message */
+}
+
+.sender {
+  color: #000000;
+  font-weight: 700;
+}
+.sender::after {
+  content: "•";
+  color: #f2e822;
+  margin: 0 0.5rem;
+}
+
+.role {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #777;
+}
+
+.senderRole {
+  display: flex;
+  align-items: center;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #5b5b5b;
+  padding-right: 2rem; /* Add padding to move timestamp a bit to the left */
+}
+
+.messageBlock {
+  padding: 5px 0;
+}
+
+.myMessage .messageText {
+  /* 6) Set your messages background color */
+  background-color: #c5e0e82e;
+}
+
+.theirMessage .messageText {
+  /* 6) Set their messages background color */
+  background-color: #ec7e1d15;
+}
+
+.inputRow {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  padding: 1rem 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.messageInput {
+  border-color: #ccc;
+  height: 2.5rem; /* 4) Set consistent height for input */
+}
+
+.sendButton {
+  background-color: #f96432d6;
+  outline: none;
+  box-shadow: none;
+  height: 2.5rem; /* 4) Set consistent height for button */
+}
+
+.sendButton:hover {
+  background-color: #f96332;
+}
+
+@media (max-width: 576px) {
+  .inputRow {
+    padding-right: 0; /* Remove padding on mobile view */
+  }
+}
