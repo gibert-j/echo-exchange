@@ -1,0 +1,30 @@
+.chatContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.searchInput {
+  border-radius: 4px;
+  border: 1px solid #444;
+}
+
+.listGroupItem {
+  border: none;
+  border-bottom: 1px solid #444;
+}
+
+.textOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #444;
+}
+
+.chatItemContainer {
+  max-width: 70%;
+}
+
+.listItemInfo {
+  max-width: 100%;
+}
