@@ -9,7 +9,10 @@ const MessageWindow = () => {
   const placeholderConversation = jokesData.jokes.map((joke, index) => ({
     id: index,
     sender: index % 2 === 0 ? "You" : "Jim Jefferies",
-    role: index % 2 === 0 ? "Role 1" : "Role 2",
+    role:
+      index % 2 === 0
+        ? "Head Honcho of Coffee Bean Quality Control"
+        : "Executive Joke Advisor to the Queen of England",
     message: joke,
     timestamp: new Date().toLocaleTimeString(),
   }));
