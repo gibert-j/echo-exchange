@@ -9,6 +9,11 @@
 
 - i.e. the InputRow should be it's own component, maintaining naming consistency. For example instead of InputRow, rename to MessageInput.
 
+### User Defails Component:
+
+- Must have information about the user on top of the MessageBlock.
+  "{ADDPICTUREHERE}"
+
 ### Add Error Handling:
 
 - For unexpected data or a failed import.

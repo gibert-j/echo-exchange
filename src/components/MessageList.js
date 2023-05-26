@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ListGroup, ListGroupItem, Input } from "reactstrap";
-import usersData from "./data/users.json";
+import usersData from "../data/users.json";
 import styles from "./MessageList.module.css";
 
 const MessageList = () => {
@@ -21,8 +21,8 @@ const MessageList = () => {
   return (
     <div className={styles.messageList}>
       <Input
-        type="text"
-        placeholder="Search..."
+        type='text'
+        placeholder='Search...'
         value={search}
         onChange={handleChange}
         className={styles.searchInput}

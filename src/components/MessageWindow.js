@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Input, Row, Col } from "reactstrap";
 import styles from "./MessageWindow.module.css";
-import placeholderMessages from "./data/placeholderMessages.json";
+import placeholderMessages from "../data/placeholderMessages.json";
 
 const MessageWindow = () => {
   const [message, setMessage] = useState("");
@@ -51,18 +51,18 @@ const MessageWindow = () => {
       </div>
       <div className={styles.inputRow}>
         <Row noGutters>
-          <Col xs="10" sm="10" lg="11">
+          <Col xs='10' sm='10' lg='11'>
             <Input
-              type="text"
+              type='text'
               value={message}
               onChange={handleChange}
-              placeholder="Write a message..."
+              placeholder='Write a message...'
               className={styles.messageInput}
               onFocus={(e) => (e.target.style.borderColor = "#f96332")}
               onBlur={(e) => (e.target.style.borderColor = "#ccc")}
             />
           </Col>
-          <Col xs="2" sm="2" lg="1">
+          <Col xs='2' sm='2' lg='1'>
             <Button onClick={handleSend} block className={styles.sendButton}>
               Send
             </Button>
