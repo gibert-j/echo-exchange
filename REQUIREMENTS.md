@@ -1,4 +1,4 @@
-# REQUIREMENTS (to be confirmed with Mike/Prageeth)
+# REQUIREMENTS
 
 ### User Interaction and Data Flow:
 
