@@ -12,7 +12,7 @@
 ### User Defails Component:
 
 - Must have information about the user on top of the MessageBlock.
-  "{ADDPICTUREHERE}"
+  <img src="src/other/requirements.png" alt="User Details">
 
 ### Add Error Handling:
 
