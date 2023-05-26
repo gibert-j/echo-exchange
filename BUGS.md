@@ -19,3 +19,5 @@ Photos should be displayed on the first column (left), name and role on the righ
 The font size for name should be smaller, like the one on the Message Window.
 Search bar should have consistent padding, as well as styling.
 Scrollbar should be contained inside the Message List element.
+
+## Styling Consistency: Inconsistency in the className of some elements.
