@@ -56,7 +56,7 @@ const MessageWindow = () => {
               type="text"
               value={message}
               onChange={handleChange}
-              placeholder="Type a message..."
+              placeholder="Write a message..."
               className={styles.messageInput}
               onFocus={(e) => (e.target.style.borderColor = "#f96332")}
               onBlur={(e) => (e.target.style.borderColor = "#ccc")}

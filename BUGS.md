@@ -11,7 +11,6 @@ Send button should be of roughly the same size across views, and have a rectangu
 There should be space between the text input and the button.
 The text input should not have a blue glow.
 Input Row should not expand outside of the Message Window.
-Change placeholder text to "Write a message...".
 
 Message List:
 The overall styling is off.
