@@ -11,7 +11,7 @@
 
 ### User Defails Component:
 
-- Must have information about the user on top of the MessageBlock.
+- Must have information about the user on top of the MessageBlock. See screenshot at the end of this document.
 
 ### Add Error Handling:
 
