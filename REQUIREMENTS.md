@@ -7,7 +7,7 @@
 
 ### Break the feature down into more components maintanining consistency:
 
-- i.e. the InputRow should be it's own component, maintaining consistency. For example instead of InputRow, rename to MessageInput.
+- i.e. the InputRow should be it's own component, maintaining naming consistency. For example instead of InputRow, rename to MessageInput.
 
 ### Add Error Handling:
 
