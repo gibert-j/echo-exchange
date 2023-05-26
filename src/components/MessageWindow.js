@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import { Button, Input, Row, Col } from "reactstrap";
 import styles from "./MessageWindow.module.css";
-import jokesData from "./data/jokes.json";
+import placeholderMessages from "./data/placeholderMessages.json";
 
 const MessageWindow = () => {
   const [message, setMessage] = useState("");
 
-  const placeholderConversation = jokesData.jokes.map((joke, index) => ({
-    id: index,
-    sender: index % 2 === 0 ? "You" : "Jim Jefferies",
-    role:
-      index % 2 === 0
-        ? "Head Honcho of Coffee Bean Quality Control"
-        : "Executive Joke Advisor to the Queen of England",
-    message: joke,
-    timestamp: new Date().toLocaleTimeString(),
-  }));
+  const placeholderConversation = placeholderMessages.jokes.map(
+    (joke, index) => ({
+      id: index,
+      sender: index % 2 === 0 ? "You" : "Jim Jefferies",
+      role:
+        index % 2 === 0
+          ? "Head Honcho of Coffee Bean Quality Control"
+          : "Executive Joke Advisor to the Queen of England",
+      message: joke,
+      timestamp: new Date().toLocaleTimeString(),
+    })
+  );
 
   const handleChange = (event) => {
     setMessage(event.target.value);
