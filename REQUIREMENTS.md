@@ -42,3 +42,5 @@
 - Add semantic HTML elements.
 - ARIA attributes.
 - Descriptive alt text for user images etc...
+
+<img src="src/other/requirements.png" alt="mobile view messenger requirements" style="max-width: 100%; height: auto;">
