@@ -12,7 +12,7 @@
 ### User Defails Component:
 
 - Must have information about the user on top of the MessageBlock.
-  <img src="src/other/requirements.png" alt="User Details">
+  <img src="src/other/requirements.png" alt="Mobile view of messenger app">
 
 ### Add Error Handling:
 
