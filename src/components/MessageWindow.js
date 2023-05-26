@@ -6,15 +6,15 @@ import placeholderMessages from "./data/placeholderMessages.json";
 const MessageWindow = () => {
   const [message, setMessage] = useState("");
 
-  const placeholderConversation = placeholderMessages.jokes.map(
-    (joke, index) => ({
+  const placeholderConversation = placeholderMessages.message.map(
+    (message, index) => ({
       id: index,
       sender: index % 2 === 0 ? "You" : "Jim Jefferies",
       role:
         index % 2 === 0
           ? "Head Honcho of Coffee Bean Quality Control"
           : "Executive Joke Advisor to the Queen of England",
-      message: joke,
+      message: message,
       timestamp: new Date().toLocaleTimeString(),
     })
   );
