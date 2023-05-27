@@ -3,7 +3,7 @@ import { ListGroup, ListGroupItem, Input } from "reactstrap";
 import usersData from "../data/users.json";
 import styles from "./MessageList.module.css";
 
-const MessageList = () => {
+const MessageList = ({ onUserClick, selectedUser }) => {
   const [search, setSearch] = useState("");
   const [users, setUsers] = useState(usersData);
 
@@ -18,6 +18,12 @@ const MessageList = () => {
     setSearch(event.target.value);
   };
 
+  const handleUserClick = (user) => {
+    if (onUserClick) {
+      onUserClick(user);
+    }
+  };
+
   return (
     <div className={styles.messageList}>
       <Input
@@ -29,7 +35,15 @@ const MessageList = () => {
       />
       <ListGroup flush>
         {users.map((user) => (
-          <ListGroupItem key={user.id} className={styles.userItem}>
+          <ListGroupItem
+            key={user.id}
+            className={`${styles.userItem} ${
+              selectedUser && selectedUser.id === user.id
+                ? styles.selectedUser
+                : ""
+            }`}
+            onClick={() => handleUserClick(user)}
+          >
             <img src={user.img} alt={user.name} className={styles.userImage} />
             <div>
               <strong className={styles.userName}>{user.name}</strong>

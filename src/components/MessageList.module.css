@@ -47,6 +47,11 @@
   }
 }
 
+.selectedUser {
+  background-color: black;
+  color: white;
+}
+
 @media (max-width: 576px) {
   .userImage {
     width: 40px;
