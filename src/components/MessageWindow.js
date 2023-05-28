@@ -3,7 +3,10 @@ import MessageInput from "./MessageInput";
 import placeholderMessages from "../data/placeholderMessages.json";
 import styles from "./MessageWindow.module.css";
 
-const MessageWindow = ({ selectedUser }) => {
+const MessageWindow = ({ selectedUser, currentConversation, sendMessage }) => {
+  // *** render the conversation based on the currentConversation state ***
+  // *** using the placeholderConversation.json until redux is implemented ***
+
   const placeholderConversation = placeholderMessages.message.map(
     (message, index) => ({
       id: index,
@@ -16,11 +19,6 @@ const MessageWindow = ({ selectedUser }) => {
       timestamp: new Date().toLocaleTimeString(),
     })
   );
-
-  const handleSend = (message) => {
-    // Here you would typically handle the sending of the message.
-    // This could involve updating state or making a server request.
-  };
 
   return (
     <div className={styles.messageWindow}>
@@ -39,12 +37,11 @@ const MessageWindow = ({ selectedUser }) => {
               </div>
               <span className={styles.timestamp}>{item.timestamp}</span>
             </div>
-
             <p className={styles.messageText}>{item.message}</p>
           </div>
         ))}
       </div>
-      <MessageInput onSend={handleSend} />
+      <MessageInput onSend={sendMessage} />
     </div>
   );
 };
