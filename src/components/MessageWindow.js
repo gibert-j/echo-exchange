@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import { Button, Input, Row, Col } from "reactstrap";
-import styles from "./MessageWindow.module.css";
+import React from "react";
+import MessageInput from "./MessageInput";
 import placeholderMessages from "../data/placeholderMessages.json";
+import styles from "./MessageWindow.module.css";
 
-const MessageWindow = () => {
-  const [message, setMessage] = useState("");
-
+const MessageWindow = ({ selectedUser }) => {
   const placeholderConversation = placeholderMessages.message.map(
     (message, index) => ({
       id: index,
@@ -19,12 +17,9 @@ const MessageWindow = () => {
     })
   );
 
-  const handleChange = (event) => {
-    setMessage(event.target.value);
-  };
-
-  const handleSend = () => {
-    setMessage("");
+  const handleSend = (message) => {
+    // Here you would typically handle the sending of the message.
+    // This could involve updating state or making a server request.
   };
 
   return (
@@ -49,26 +44,7 @@ const MessageWindow = () => {
           </div>
         ))}
       </div>
-      <div className={styles.inputRow}>
-        <Row noGutters>
-          <Col xs='10' sm='10' lg='11'>
-            <Input
-              type='text'
-              value={message}
-              onChange={handleChange}
-              placeholder='Write a message...'
-              className={styles.messageInput}
-              onFocus={(e) => (e.target.style.borderColor = "#f96332")}
-              onBlur={(e) => (e.target.style.borderColor = "#ccc")}
-            />
-          </Col>
-          <Col xs='2' sm='2' lg='1'>
-            <Button onClick={handleSend} block className={styles.sendButton}>
-              Send
-            </Button>
-          </Col>
-        </Row>
-      </div>
+      <MessageInput onSend={handleSend} />
     </div>
   );
 };

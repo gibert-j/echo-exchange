@@ -1,0 +1,29 @@
+.messageInput {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  padding: 0.5rem 1rem 0.8rem 1rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* remove this after testing: */
+  background-color: fuchsia;
+}
+
+.textInput {
+  border-color: #ccc;
+  height: 2.5rem;
+}
+
+.sendButton {
+  background-color: #f96432d6;
+  border: rgba(0, 0, 0, 0.074) solid;
+  outline: none;
+  box-shadow: none;
+  height: 2.5rem;
+}
+
+.sendButton:hover {
+  background-color: #f96332;
+  border: rgba(0, 0, 0, 0.074) solid;
+}
