@@ -13,6 +13,7 @@
 - There should be space between the text input and the button.
 - The text input should not have a blue glow.
 - Input Row should not expand outside of the Message Window.
+- Component name not consistent, rename to MessageInput.
 
 ## Message List:
 
@@ -25,4 +26,4 @@
 
 ## Styling Consistency:
 
-- Inconsistency in the className of some elements.
+- Inconsistency in the className of some elements, hence not applying styles.
