@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ListGroup, ListGroupItem, Input } from "reactstrap";
-import usersData from "../data/users.json";
+import usersData from "../../data/users.json";
 import styles from "./MessageList.module.css";
 
 const MessageList = ({ onUserClick, selectedUser }) => {

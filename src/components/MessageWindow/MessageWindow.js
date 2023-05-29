@@ -1,6 +1,6 @@
 import React from "react";
-import MessageInput from "./MessageInput";
-import placeholderMessages from "../data/placeholderMessages.json";
+import MessageInput from "../MessageInput/MessageInput";
+import placeholderMessages from "../../data/placeholderMessages.json";
 import styles from "./MessageWindow.module.css";
 
 const MessageWindow = ({ selectedUser, currentConversation, sendMessage }) => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import MessageList from "./MessageList";
-import MessageWindow from "./MessageWindow";
+import MessageList from "./MessageList/MessageList";
+import MessageWindow from "././MessageWindow/MessageWindow";
 import styles from "./MessengerApp.module.css";
 
 const MessengerApp = () => {
@@ -9,7 +9,7 @@ const MessengerApp = () => {
 
   const selectUser = (user) => {
     setSelectedUser(user);
-    // *** need tofetch and set the conversation with the selected user here ***
+    // *** need to fetch and set the conversation with the selected user here ***
     setCurrentConversation([]);
   };
 
