@@ -6,9 +6,10 @@ I had issues with npm packages. Switched to yarn but left the package.json file 
 
 - Fetch Real Data
 - Error Handling
-  - Boundaries ✓
+  - Boundaries
   - Event Listeners
 - Loading States (with Redux)
 - Unit Testing
 - Redux Implementation
-- ? PropTypes ?
+- Input validations
+- PropTypes

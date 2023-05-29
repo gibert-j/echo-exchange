@@ -19,6 +19,7 @@ const MessageList = ({ onUserClick, selectedUser }) => {
   };
 
   const handleUserClick = (user) => {
+    console.log(`handleUserClick user: ${user}`);
     if (onUserClick) {
       onUserClick(user);
     }

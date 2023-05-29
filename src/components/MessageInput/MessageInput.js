@@ -10,15 +10,15 @@ const MessageInput = ({ onSend }) => {
   };
 
   const handleSend = () => {
-    if (onSend) {
+    if (message !== "") {
       onSend(message);
+      setMessage("");
     }
-    setMessage("");
   };
 
   return (
     <div className={styles.messageInput}>
-      <Row noGutters>
+      <Row>
         <Col xs='10' sm='10' lg='11'>
           <Input
             type='text'
